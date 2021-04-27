@@ -2,7 +2,7 @@
     <div class="question-boc-container">
         <b-jumbotron>
             <template #lead>
-                Une Question ?
+                {{ currentQuestion.question}}
             </template>
 
             <hr class="my-4">
@@ -16,3 +16,11 @@
         </b-jumbotron>
     </div>
 </template>
+
+<script>
+export default {
+    props: {
+        currentQuestion: Object
+    }
+}
+</script>
